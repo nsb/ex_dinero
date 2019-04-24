@@ -23,6 +23,8 @@ defmodule ExDinero.MixProject do
 
   defp package() do
     [
+      files: ~w(lib .formatter.exs mix.exs README*),
+      maintainers: ["Niels Sandholt Busch"],
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/elixir-ecto/postgrex"}
     ]
