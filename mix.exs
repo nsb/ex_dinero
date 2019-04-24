@@ -9,7 +9,8 @@ defmodule ExDinero.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: "Elixir Api client for danish accounting service Dinero.",
-      source_url: "https://github.com/nsb/ex_dinero"
+      source_url: "https://github.com/nsb/ex_dinero",
+      package: package()
     ]
   end
 
@@ -17,6 +18,13 @@ defmodule ExDinero.MixProject do
   def application do
     [
       extra_applications: [:logger]
+    ]
+  end
+
+  defp package() do
+    [
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/elixir-ecto/postgrex"}
     ]
   end
 
