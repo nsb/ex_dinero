@@ -8,7 +8,6 @@ defmodule ExDinero.MixProject do
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      name: "ExDinero",
       description: "Elixir Api client for danish accounting service Dinero.",
       source_url: "https://github.com/nsb/ex_dinero"
     ]
